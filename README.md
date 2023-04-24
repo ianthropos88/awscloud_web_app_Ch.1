@@ -18,7 +18,7 @@ The project is supported by several managed services including **Amazon Elastic 
 
 ### ✔️ Problem Statement ###
 
--> Hypothesis of what customer problem we were trying to solve!
+-> Hypothesis of what customer problem we are trying to solve!
 
 1. Finished Operational Test Results Required, is sent to the officials with wrong denomination of the destination country or the subjects to be declared free from or to be tested.
 2. Shipment documentation does not match with country requirements.
@@ -26,13 +26,13 @@ The project is supported by several managed services including **Amazon Elastic 
 
 On the Regulatory Document, we did not have a tool. On the transport documentation we had a tool, however, we faced accuracy issues with it. In case of the bag print, a project was pulled together but still some countries were kept out of scope.
 
-In a similar case, few regulatory information were recorded from Jan 2020, but we knew that, not all the cases were registered and they were only reported by emails.
+In a similar case, few regulatory information were recorded, but we knew that, not all the cases were registered and they were only reported by emails.
 
 #### ✔️ Objectives ####
 
 -> How we are trying to solve it!
 
-Create a highly scalable Web App with a distributed relational database, where all the concerned teams can find the right information related to the Regulatory information to request, bag layout, and the transport documentation. All the information needed to be related to the Initial Article Number and it must have been able to track when the changes were done.
+Create a highly scalable Web App with a distributed relational database, where all the concerned teams can find the right information related to the Regulatory information to request, bag layout, and the transport documentation. All the information needed to be related to the Initial Article Number and it must be able to track when the changes were done.
 
 #### ✔️ Deliverables ####
 
@@ -46,7 +46,7 @@ Create a highly scalable Web App with a distributed relational database, where a
 -> What will be the impact of it!
 
 1. Management of Change.
-2. Countries Ownership of the Process.
+2. Countries & Reional Ownership of the Process.
 3. Good Application from the database to the Production Sites.
 
 #### ✔️ Measures: KPIs & Benefits ####
@@ -104,6 +104,14 @@ The following dataflow design illustrates the workflow:
   <img align="center" src="image/static/AWS_Cloud_Architecture-Project Plan.png" width=100%>
 </p>
 <p align="center"><b>Scenario 2:</b> The Project Plan - AWS Cloud.</p>
+
+Modern apps are fueled by data. Whether the data is user-generated or provided by content creators, the success of an app depends on the management of that data. Our app generates a lot of data. Not only lists of things that need to be done, but also how fast they are done, the priority, and perhaps a prediction of when items on the list are finished. This data should be synced between different devices. This is essential because it will enable our customers to be as productive as possible, no matter which device they use or where they are. All this functionality increases engagement with the app, which yields more opportunities to make it successful.
+
+## **Conclusion** ##
+
+Security and user management, modelling and syncing data, sending push notifications to devices, analyzing user behavior, and testing are building blocks for a strong technical foundation that great apps have. AWS Amplify makes it easy to set up the needed services on the AWS Cloud and integrate them into your app, which lets you bypass many of the technical challenges you face when starting your business. The services the app leverages are built to be secure and scalable, and you stay in full control of them. You can move fast and inherit the best practices from AWS Amplify, and you can also customize the services as your business grows.
+
+Have fun, and build on! :thumbsup:
 
 # About Me :sunglasses: #
 - With 10+ years of industry experience, I have thrived in Data Science, Data Governance, IT, Cloud and Product Management. I have a keen interest and expertise in solving business problems using unique logic and analytics. I bring solutions to the table based on competitive Business Acumen and Human Intelligence.
