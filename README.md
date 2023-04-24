@@ -101,7 +101,7 @@ The following dataflow design illustrates the workflow:
 ## **Project Plan** :black_nib: ##
 
 <p align="center">
-  <img align="center" src="image/static/AWS_Cloud_Architecture-Project Plan.png" width=100%>
+  <img align="center" src="image/static/AWS_Cloud_Project_Plan.png" width=100%>
 </p>
 <p align="center"><b>Scenario 2:</b> The Project Plan - AWS Cloud.</p>
 
