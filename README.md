@@ -2,17 +2,23 @@
 
 The purpose of this project was to create a Web Application where all the concerned teams can find the right information related to their Operational and Regulatory Information.
 
+**This project is divided in 4 Chapters:**
+- **Chapter 1:** This article provides the overview and plan to create a 3 Tier Web Application for storage and interaction of Operational and Regulatory information in an Agricultural Company within AWS Cloud.
+- **Chapter 2:** The following article provides a look at the classic 3 Tier Web Application Architecture, and how it can leverage the AWS Cloud Computing Infrastructure.
+- **Chapter 3:** This article provides an overview and solution for a Cross-Region Deployment which is presently not supported by the AWS CodePipeline.
+- **Chapter 4:** This article provides and overview and solution on how we can easily set up and manage an entire CI/CD pipeline in AWS accounts using the native AWS suite of CI/CD services, and deploying the application in 3 Regions (Development, Staging, & Production).
+
 ## > :rocket: **Thank you for your interest in my work.** :blush: ##
 
-This solution aims at deploying a web application with a PostgreSQL database on AWS in 3 environments (Development, Staging, & Production).
+This solution aims at deploying a 3 Tier Web Application for storage and interaction of Operational and Regulatory information in an Agricultural Company within AWS Cloud.
 
-The project is supported by several managed services including AWS RDS, PostgreSQL,Amazon ElastiCache, Amazon Elasticsearch Service, Amazon Pinpoint and Amazon Personalize.
+The project is supported by several managed services including Amazon Elastic Compute Cloud (Amazon EC2), Route 53, CloudFront, Secrets Manager, CloudTrail, Security Hub, Amazon ECR, Transit Gateway, and required Cross-Region Replications, etc.
 
 # **Web App Optimization** :hourglass_flowing_sand::clock10: #
 
 ### ✔️ Problem Statement ###
 
-We faced 3 different issues, that might have highly similar root causes:
+-> Hypothesis of what customer problem we were trying to solve!
 
 1. Finished Operational Test Results Required, is sent to the officials with wrong denomination of the destination country or the subjects to be declared free from or to be tested.
 2. Shipment documentation does not match with country requirements.
@@ -24,15 +30,9 @@ In a similar case, few regulatory information were recorded from Jan 2020, but w
 
 #### ✔️ Objectives ####
 
+-> How we are trying to solve it!
+
 Create a highly scalable Web App with a distributed relational database, where all the concerned teams can find the right information related to the Regulatory information to request, bag layout, and the transport documentation. All the information needed to be related to the Initial Article Number and it must have been able to track when the changes were done.
-
-#### ✔️ Scope ####
-
-**1st Phase:** 2 Commercial Crops
-
-**2nd Phase:** Include Other Crops
-
-**Not In Scope:** NA
 
 #### ✔️ Deliverables ####
 
@@ -43,11 +43,15 @@ Create a highly scalable Web App with a distributed relational database, where a
 
 #### ✔️ Critical Success Factors ####
 
+-> What will be the impact of it!
+
 1. Management of Change.
 2. Countries Ownership of the Process.
 3. Good Application from the database to the Production Sites.
 
 #### ✔️ Measures: KPIs & Benefits ####
+
+-> Why we are trying to solve it!
 
 1. Non-conformities due to wrong delivery documentation.
 2. Waiting time for Regulatory Document Corrections.
@@ -75,6 +79,18 @@ When a new host is brought up, you shouldn’t make assumptions about the IP add
 
 **Web App Data Flow**
 
+The flow of a web application is characterized by the systematic organization of web pages, page data, page actions, and mappings to business logic and the interconnection of these components. The web diagram tools provide you with a visual way to create and manage the data flow of your web application.
+
+**Key features**
+
+1. **Autoscaling of resources and dynamic work rebalancing** - Minimize pipeline latency, maximize resource utilization, and reduce processing cost per data record with data-aware resource autoscaling. Data inputs are partitioned automatically and constantly rebalanced to even out worker resource utilization and reduce the effect of “hot keys” on pipeline performance.
+
+2. **Flexible scheduling and pricing for batch processing** - For processing with flexibility in job scheduling time, such as overnight jobs, flexible resource scheduling (FlexRS) offers a lower price for batch processing. These flexible jobs are placed into a queue with a guarantee that they will be retrieved for execution within a six-hour window.
+
+3. **Ready-to-use real-time AI patterns** - Enabled through ready-to-use patterns, Dataflow’s real-time AI capabilities allow for real-time reactions with near-human intelligence to large torrents of events. Customers can build intelligent solutions ranging from predictive analytics and anomaly detection to real-time personalization and other advanced analytics use cases. 
+
+The following dataflow design illustrates the workflow:
+
 <p align="center">
   <img align="center" src="image/static/Data_Flow.png" width=100%>
 </p>
@@ -89,32 +105,7 @@ When a new host is brought up, you shouldn’t make assumptions about the IP add
 </p>
 <p align="center"><b>Scenario 2:</b> The Project Plan - AWS Cloud.</p>
 
-## **Deploy the Application and Database within 3 Environments (Development, Staging, Production)** :pager: ##
-
-This example will show how to deploy a containerized app (Strapi) with PostgreSQL on AWS in Development, Staging and Production and makes it accessible via HTTPS. All of that in just a few lines of Terraform file.
-
-Behind the scene:
-
-1. Creates 3 Kubernetes clusters (`Dev`, `Staging`, `Production`) on your AWS account (VPC, Security Groups, Subnet, EKS/Kubernetes...)
-2. Creates resources:
-   1. Organization `Terraform Demo`
-   2. Project `Strapi V4`
-   3. Environment `production`
-   4. Database `strapi db` (RDS) for `Production`
-   5. Application `strapi app` for `Production`
-   6. Environment `staging`
-   7. Database `strapi db` (RDS) for `Staging`
-   8. Application `strapi app` for `Staging`
-   9. Environment `dev`
-   10. Database `strapi db` (Container with EBS) for `Dev`
-   11. Application `strapi app` for `Dev`
-   12. Inject all the Secrets and Environment Variables used by the app for every environment
-3. Build `strapi app` application for `Production`, `Staging` and `Dev` environments in parallel
-4. Pushes `strapi app` container image in your ECR registry  for `Production`, `Staging` and `Dev` environments in parallel
-5. Deploys your PostgreSQL database for `Production` (AWS RDS), `Staging` (AWS RDS) and `Dev` (Container) environments in parallel
-6. Deploys `strapi app` on your `Production`, `Staging` and `Dev` EKS clusters
-7. Creates an AWS Network Load Balancer for all your clusters and apps
-8. Generates a TLS certificate for your app for all your apps
-9. Exposes publicly via HTTPS your Strapi app from `Production`, `Staging` and `Dev` through different endpoints
-
-It will take approximately **20 minutes to create your infrastructure** and **less than 10 minutes to deploy your application** for each environment. 
+# About Me :sunglasses: #
+- With 10+ years of industry experience, I have thrived in Data Science, Data Governance, IT, Cloud and Product Management. I have a keen interest and expertise in solving business problems using unique logic and analytics. I bring solutions to the table based on competitive Business Acumen and Human Intelligence.
+- Have a look at my portfolio: [Helping organization level all their Seeds Business arguments using Data & Technology | Ex_Zalando | Ex_Freecharge | Ex_Myntra Jabong | Ex_Supercell | Ex_Infosys](https://www.linkedin.com/in/pnchoudhury/)
+- I love talking about #cloudarchitecture, #businessanalytics, #datapipelines, #machinelearning, and #artificialintelligence
