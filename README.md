@@ -1,6 +1,6 @@
 # **Build an Outstanding AWS Infrastructure with Terraform, which inspires high levels of scalability and performance within AWS Cloud.** :computer: #
 
-The purpose of this project was to create a Web Application where all the concerned teams can find the right information related to their Operational and Regulatory Information. [Chapter 1]
+The purpose of this project was to create a Web Application where all the concerned teams can find the right information related to their Operational and Regulatory Information. **[Chapter 1]**
 
 **This project is divided in 4 Chapters:**
 - [**Chapter 1**:](https://github.com/ianthropos88/awscloud_web_app_Ch.1) This article provides the overview and plan to create a 3 Tier Web Application for storage and interaction of Operational and Regulatory information in an Agricultural Company within AWS Cloud.
