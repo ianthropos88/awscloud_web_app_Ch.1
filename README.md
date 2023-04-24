@@ -10,7 +10,7 @@ The purpose of this project was to create a Web Application where all the concer
 
 ## > :rocket: **Thank you for your interest in my work.** :blush: ##
 
-This solution aims at deploying a 3 Tier Web Application for storage and interaction of Operational and Regulatory information for a Global Agricultural Company within AWS Cloud.
+This solution aims at developing a 3 Tier Web Application project plan for storage and interaction of Operational and Regulatory information, for a Global Agricultural Company within AWS Cloud.
 
 The project is supported by several managed services including **Amazon Elastic Compute Cloud (Amazon EC2)**, **Route 53**, **CloudFront**, **Secrets Manager**, **CloudTrail**, **Security Hub**, **Amazon ECR**, **Transit Gateway**, and required **Cross-Region Replications**, etc.
 
