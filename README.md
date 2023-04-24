@@ -4,7 +4,7 @@ The purpose of this project was to create a Web Application where all the concer
 
 **This project is divided in 4 Chapters:**
 - [**Chapter 1**:](https://github.com/ianthropos88/awscloud_web_app_Ch.1) This article provides the overview and plan to create a 3 Tier Web Application for storage and interaction of Operational and Regulatory information in an Agricultural Company within AWS Cloud.
-- [**Chapter 2**:](https://github.com/ianthropos88/awscloud_web_app_Ch.2) The following article provides a look at the classic 3 Tier Web Application Architecture, and how it can leverage the AWS Cloud Computing Infrastructure.
+- [**Chapter 2**:](https://github.com/ianthropos88/awscloud_web_app_Ch.2) This article provides a look at the classic 3 Tier Web Application Architecture, and how it can leverage the AWS Cloud Computing Infrastructure.
 - [**Chapter 3**:](https://github.com/ianthropos88/awscloud_web_app_Ch.3) This article provides an overview and solution for a Cross-Region Deployment which is presently not supported by the AWS CodePipeline.
 - [**Chapter 4**:](https://github.com/ianthropos88/awscloud_web_app_Ch.4) This article provides and overview and solution on how we can easily set up and manage an entire CI/CD pipeline in AWS accounts using the native AWS suite of CI/CD services, and deploying the application in 3 Regions (Development, Staging, & Production).
 
